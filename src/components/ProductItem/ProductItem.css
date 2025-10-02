@@ -8,6 +8,7 @@
   flex-direction: column;
   gap: var(--spacing-xs);
   max-width: var(--product-card-width);
+  height: 100%; /* مهم عشان الكاردات كلها بنفس الطول */
 }
 
 .product-item:hover {
@@ -52,7 +53,7 @@
   font-weight: var(--font-weight-semibold);
   cursor: pointer;
   transition: all var(--transition-normal);
-  margin-top: var(--spacing-xs);
+  margin-top: auto; /* هاد المهم - بدفع الزر للأسفل */
   position: relative;
   overflow: hidden;
 }
