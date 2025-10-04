@@ -1,19 +1,13 @@
 import "./App.css";
-import "./variables.css";
-import "./App.css";
-import ProductItem from "./components/ProductItem";
 
+import "./App.css";
+import "./variables.css";
+import ProductsGrid from "./components/ProductsGrid/ProductsGrid";
 function App() {
   return (
     <div className="App">
       <h3>hiiiiiiii</h3>
-      <ProductItem
-        name={"sewar"}
-        price={50}
-        img={
-          "https://i.pinimg.com/1200x/27/f7/50/27f75066046b5e7092fcaca009586bdb.jpg"
-        }
-      />
+      <ProductsGrid />
     </div>
   );
 }
