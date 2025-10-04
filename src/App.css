@@ -36,7 +36,9 @@
 
   .cart-section {
     position: static;
-    flex: 1;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 
@@ -44,5 +46,9 @@
   .main-content {
     padding: var(--spacing-md);
     gap: var(--spacing-lg);
+  }
+
+  .cart-section {
+    max-width: 100%;
   }
 }
