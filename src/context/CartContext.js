@@ -15,7 +15,17 @@ function cartReducer(cart, action) {
     }
     case "REMOVE-FROM-CART":
       return cart.filter((item) => item.id !== action.id);
-
+    case "UPDATE-QUANTITY": {
+      if (action.newCount <= 0)
+        return cart.filter((item) => item.id !== action.item.id);
+      else {
+        return cart.map((item) => {
+          if (item.id === action.item.id)
+            return { ...item, count: action.newCount };
+          return item;
+        });
+      }
+    }
     default:
       return cart;
   }
