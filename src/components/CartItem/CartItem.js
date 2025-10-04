@@ -15,11 +15,34 @@ export default function CartItem({ id, name, price, image, count }) {
       </div>
 
       <div className="cart-item-quantity">
-        <button className="quantity-btn" type="button" onClick={() => {}}>
+        <button
+          className="quantity-btn"
+          type="button"
+          onClick={() =>
+            dispatch({
+              type: "UPDATE-QUANTITY",
+              item: { id, name, price, image, count },
+              newCount: count - 1,
+            })
+          }
+          disabled={count === 1}
+        >
           -
         </button>
         <span className="quantity-value">{count}</span>
-        <button className="quantity-btn" type="button" onClick={() => {}}>
+        <button
+          className="quantity-btn"
+          type="button"
+          disabled={count >= 99}
+          onClick={() =>
+            dispatch({
+              type: "UPDATE-QUANTITY",
+              item: { id, name, price, image },
+
+              newCount: count + 1,
+            })
+          }
+        >
           +
         </button>
       </div>
