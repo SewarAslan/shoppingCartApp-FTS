@@ -1,10 +1,27 @@
+import "./variables.css";
 import "./App.css";
+import Header from "./components/Header/Header";
+import Cart from "./components/Cart/Cart";
+import ProductsGrid from "./components/ProductsGrid/ProductsGrid";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Shopping Cart</h1>
-    </div>
+    <CartProvider>
+      <div className="App">
+        <Header />
+
+        <main className="main-content">
+          <section className="cart-section">
+            <Cart />
+          </section>
+
+          <section className="products-section">
+            <ProductsGrid />
+          </section>
+        </main>
+      </div>
+    </CartProvider>
   );
 }
 
