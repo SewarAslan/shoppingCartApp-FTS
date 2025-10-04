@@ -1,6 +1,8 @@
 import "./CartItem.css";
-
+import { useCartDispatch } from "../../context/CartContext";
 export default function CartItem({ id, name, price, image, count }) {
+  const dispatch = useCartDispatch();
+
   return (
     <li className="cart-item">
       <div className="cart-item-image">
@@ -30,7 +32,12 @@ export default function CartItem({ id, name, price, image, count }) {
         className="remove-btn"
         type="button"
         aria-label="Remove item"
-        onClick={() => {}}
+        onClick={() =>
+          dispatch({
+            type: "REMOVE-FROM-CART",
+            id,
+          })
+        }
       >
         ×
       </button>
