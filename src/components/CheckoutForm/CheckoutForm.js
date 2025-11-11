@@ -3,7 +3,7 @@ import "./CheckoutForm.css";
 import { useCart } from "../../context/CartContext";
 
 export default function CheckoutForm() {
-  const { cart, totalPrice } = useCart();
+  const { cart, totalPrice, totalItems } = useCart();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -73,7 +73,7 @@ export default function CheckoutForm() {
           />
         </div>
         <div className="order-summary">
-          <p>Total Items: {cart.reduce((sum, item) => sum + item.count, 0)}</p>
+          <p>Total Items: {totalItems}</p>
           <p className="total-price">Total: ${totalPrice.toFixed(2)}</p>
         </div>
         <button

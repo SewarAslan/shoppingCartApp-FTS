@@ -1,7 +1,12 @@
 import "./ProductItem.css";
 import { useCartDispatch } from "../../context/CartContext";
 
-export default function ProductItem({ id, name, price, img }) {
+export default function ProductItem({
+  id,
+  name,
+  price,
+  img = "https://kints.co.in/twenty-nineteen/img/defaults/product-default.png",
+}) {
   const dispatch = useCartDispatch();
   return (
     <div className="product-item">
