@@ -1,0 +1,56 @@
+:root {
+  /* Primary Colors */
+  --primary-color: #721212;
+  --primary-dark: #a24b4b;
+  --primary-light: #ea6666;
+
+  /* Background Colors */
+  --bg-white: #fff;
+  --bg-light: #f5f5f5;
+  --bg-gray: #f9fafb;
+
+  /* Text Colors */
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --text-light: #718096;
+  --text-white: #ffffff;
+
+  /* Border & Shadow */
+  --border-radius-sm: 10px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 16px;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.15);
+  --shadow-primary: 0 6px 20px rgba(234, 102, 102, 0.4);
+
+  /* Typography */
+  --font-size-sm: 0.875rem;
+  --font-size-base: 0.95rem;
+  --font-size-lg: 1rem;
+  --font-size-xl: 1.2rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-2xl: 32px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Container */
+  --container-max-width: 1400px;
+  --product-card-width: 220px;
+}
