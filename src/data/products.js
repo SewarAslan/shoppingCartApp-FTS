@@ -1,10 +1,10 @@
-const products = [
+export const products = [
   {
     id: 100,
     name: "Apple Airpod Max",
     price: 2500,
     image:
-      "https://fastly.picsum.photos/id/732/200/300.jpg?hmac=mBueuWVJ8LlL-R7Yt9w1ONAFVayQPH5DzVSO-lPyI9whttps://i.pinimg.com/736x/4d/64/3b/4d643bce9d5c6d77d9c2149967864a11.jpg",
+      "https://i.pinimg.com/736x/d4/a2/20/d4a220bf17740ec06138463e3e2c2b33.jpg",
   },
   {
     id: 101,
