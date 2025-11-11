@@ -54,6 +54,7 @@
 .cart-item-quantity {
   display: flex;
   align-items: center;
+  gap: var(--spacing-sm);
 }
 
 .quantity-btn {
@@ -72,9 +73,16 @@
   justify-content: center;
 }
 
-.quantity-btn:hover {
+.quantity-btn:hover:not(:disabled) {
   background: var(--primary-color);
   color: var(--text-white);
+}
+
+.quantity-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: var(--text-light);
+  color: var(--text-light);
 }
 
 .quantity-value {
